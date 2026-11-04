@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | CSE Student Portfolio</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#121a30; --text:#f4f7ff; --muted:#b9c3dc; --accent:#7c9cff; --line:#283454; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    .wrap { width:min(1000px, 92%); margin:auto; }
+    header { padding:22px 0; border-bottom:1px solid var(--line); }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+    .brand { font-weight:800; letter-spacing:.4px; }
+    nav a { color:var(--muted); text-decoration:none; margin-left:16px; }
+    nav a:hover, a:focus { color:var(--accent); }
+    .hero { padding:76px 0 56px; display:grid; grid-template-columns:1.4fr .8fr; gap:28px; align-items:center; }
+    .eyebrow { color:var(--accent); font-weight:700; text-transform:uppercase; letter-spacing:2px; font-size:.82rem; }
+    h1 { font-size:clamp(2.3rem, 6vw, 4.3rem); line-height:1.08; margin:12px 0 18px; }
+    h2 { font-size:1.8rem; margin:0 0 16px; }
+    p { color:var(--muted); }
+    .btn { display:inline-block; padding:11px 17px; margin:8px 8px 0 0; border-radius:10px; background:var(--accent); color:#071024; text-decoration:none; font-weight:700; }
+    .btn.secondary { background:transparent; border:1px solid var(--line); color:var(--text); }
+    .profile { background:linear-gradient(145deg,#192647,#10172b); border:1px solid var(--line); border-radius:22px; padding:28px; text-align:center; }
+    .avatar { width:108px; height:108px; margin:0 auto 16px; border-radius:50%; display:grid; place-items:center; background:#263c70; color:white; font-size:2.5rem; font-weight:800; }
+    section { padding:32px 0; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card { padding:22px; background:var(--panel); border:1px solid var(--line); border-radius:16px; }
+    .card h3 { margin-top:0; }
+    .tag { display:inline-block; font-size:.82rem; padding:4px 9px; border-radius:999px; background:#202d4e; color:#dbe4ff; margin:3px 4px 3px 0; }
+    .project-link { color:var(--accent); font-weight:700; text-decoration:none; }
+    .contact { text-align:center; padding:34px; background:var(--panel); border:1px solid var(--line); border-radius:18px; }
+    footer { padding:28px 0; text-align:center; color:var(--muted); font-size:.9rem; }
+    @media (max-width:700px) { .hero { grid-template-columns:1fr; padding-top:48px; } .grid { grid-template-columns:1fr; } nav a { margin-left:8px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">YOUR PORTFOLIO</div>
+        <div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">First-year CSE student</div>
+        <h1>Hi, I'm <span style="color:var(--accent)">Your Name.</span></h1>
+        <p>I'm a Computer Science Engineering student beginning my journey in web development. I'm learning by building small projects and looking for an opportunity to grow, contribute, and learn from a team.</p>
+        <a class="btn" href="#projects">See my project</a>
+        <a class="btn secondary" href="#contact">Contact me</a>
+      </div>
+      <div class="profile">
+        <div class="avatar">YN</div>
+        <h3>Your Name</h3>
+        <p>Student • Aspiring Web Developer</p>
+        <span class="tag">Curious learner</span><span class="tag">Problem solving</span>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <div class="card">
+        <p>I'm currently studying Computer Science Engineering. I'm building my foundations in HTML and CSS and exploring how websites are designed and developed. I enjoy learning through practice and am excited to improve my skills through real projects and internship experience.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills I'm learning</h2>
+      <div class="card">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">Responsive design basics</span>
+        <span class="tag">GitHub basics</span>
+        <p>These are beginner-level skills I'm currently practising. I'll update this section as I learn more.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Project</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Personal Portfolio Website</h3>
+          <p>A simple responsive portfolio webpage made with HTML and CSS to introduce myself, share the skills I'm learning, and showcase my work.</p>
+          <span class="tag">HTML</span><span class="tag">CSS</span>
+          <p><a class="project-link" href="#contact">Project source: add your GitHub repository link</a></p>
+        </article>
+        <article class="card">
+          <h3>Next project</h3>
+          <p>Planned: a simple calculator or to-do list to practise layout, input handling, and JavaScript fundamentals.</p>
+          <span class="tag">Coming soon</span>
+        </article>
+        <article class="card">
+          <h3>What I'm working toward</h3>
+          <p>Learning JavaScript, improving responsive layouts, and creating useful projects that solve small everyday problems.</p>
+          <span class="tag">Learning in progress</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <h2>Let's connect</h2>
+        <p>I'm interested in beginner-friendly web development internship opportunities and learning from experienced developers.</p>
+        <p><strong>Email:</strong> replace-with-your-email@example.com</p>
+        <p><strong>GitHub:</strong> add your GitHub profile URL after creating your account</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">Made while learning HTML and CSS • © <span id="year"></span> Your Name</div></footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
